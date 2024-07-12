@@ -39,11 +39,13 @@ img{width: 100%; display: block; height: 100%;}
     color:white;
     display: flex;
     width: 100%;
+
 }
 .header-container > div{
     padding: 20px;
+    
 }
-.header-container > div:nth-child(3){
+.header-container > div:nth-child(1){
     margin-left: auto;
 }
 /* intro container */

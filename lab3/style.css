@@ -1,0 +1,110 @@
+*{box-sizing: border-box;}
+.title{text-align: center; color: magenta; margin-top: 100px;}
+/*------ SHAPES ------- */
+.shapeContainer{
+    width: 500px;
+    margin: 20px auto;
+    background-color: azure;
+    padding: 20px;
+    text-align: center;
+}
+.shapeDiv{
+    width: 200px;
+    color: purple !important;
+}
+.square{
+    width: 200px;
+    background-color: blueviolet;
+}
+.rectangle{
+    width: 400px;
+    background-color:olive;
+}
+.circle{
+    width: 200px;
+    border-radius: 50%;
+    background-color: crimson;
+}
+.square , .rectangle , .circle, .shapeDiv{
+    height: 200px;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+}
+
+/* ----- COLLAPSIBLE NAV MENU ----- */
+.header-container, .navMenu{
+    background-color: rgba(128, 0, 128, 0.7);
+    color:white;
+    display: flex;
+    width: 100%;
+}
+.header-container > div, .navMenu > div{
+    padding: 20px; 
+}
+.header-container > div:nth-child(2){
+    margin-left: auto;
+}
+.headerNav{
+    position: fixed;
+    top:0%; 
+    left: 0%;
+    right: 0%;
+}
+.navMenu{display: none; /*hidden*/} 
+.navMenu > div:nth-child(2){
+    margin-left: auto;
+    cursor: pointer;
+}
+.collapsemenu{
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    display: none; /*hidden*/
+}
+.collapsemenu>div{
+    color: white;
+    padding: 20px 0px;
+}
+.collapsemenu>div:hover{
+    font-weight: bolder;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.closeToOpen{
+    display: block;
+}
+@media screen and (max-width:900px) {
+    .header-container{
+        display: none;
+    }
+    .navMenu{display: flex;}
+}
+
+/*---- MODAL WINDOW ---- */
+img{width: 100%; display: block;}
+.card{
+    width: 200px;
+    border: solid 2px lightgray;
+    cursor: pointer;
+}
+.card:hover{
+    border: black 2px solid;
+    transform: scale(1.01);
+}
+.modalwindow{
+    background-color: rgba(30, 30, 30, 0.8);
+    position: fixed;
+    top:0%;
+    bottom: 0%;
+    left:0%;
+    right: 0%;
+    display: none; /*hidden*/
+}
+.modalcontent{
+    width: 60%;
+    margin: 20% auto;
+    background-color: white;
+    display: flex;
+}
