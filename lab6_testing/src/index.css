@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.title{
+  text-align: center;
+}
+/* ----- NAVBARS.JS ------ */
+.navbar{
+  background-color: aliceblue;
+  display: flex;
+  padding: 20px;
+}
+.navbar div:nth-child(2){
+  margin-left: auto;
+}
+.btngroup button{
+  padding: 0px 20px;
+  border: none;
+  background-color: aliceblue;
+}
+.btngroup button:hover{
+  font-weight: bolder;
+  text-decoration: underline;
+}
