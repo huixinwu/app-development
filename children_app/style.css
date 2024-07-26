@@ -1,0 +1,158 @@
+*{box-sizing: border-box;}
+body{
+    font-family: "Cooper";
+}
+img{width: 100%; display: block;}
+:root{
+    --primarycolor: rgb(255, 130, 0);
+}
+/* ----- MAIN CONTAINER (index.html) ----- */
+.intro{
+    margin-top: 6em;
+    padding: 2em;
+    font-size: large;
+}
+.maincontainer{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 5em;
+}
+.card{
+    width:300px;
+    margin: 2%;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card img{
+    padding: 20%;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px var(--primarycolor);
+}
+.cardtitle{
+    position: absolute;
+    top:0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(10, 10, 10, 0.4);
+    padding: 40% 1em 1em 1em;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    overflow: hidden;
+}
+.cardtitle:hover{
+    color: var(--primarycolor);
+    font-size: 2.5em;
+    background-color: rgba(10, 10, 10, 0.6);
+}
+/* ----- COLLAPSIBLE NAV MENU ----- */
+.header-container, .navMenu{
+    background-color: var(--primarycolor);
+    color:white;
+    display: flex;
+    width: 100%;
+}
+.header-container a, .navMenu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.header-container >div:nth-child(1), .navMenu > div:nth-child(1){
+    font-size:1.8em;
+}.header-container >div:nth-child(1) a, .navMenu >div:nth-child(1) a{
+    text-decoration: none;
+    color: white;
+}
+.header-container > div, .navMenu > div{
+    padding: 20px; 
+}
+.header-container > div:nth-child(2){
+    margin-left: auto;
+}
+.headerNav{
+    position: fixed;
+    top:0%; 
+    left: 0%;
+    right: 0%;
+}
+.navMenu{display: none; /*hidden*/} 
+.navMenu > div:nth-child(2){
+    margin-left: auto;
+    cursor: pointer;
+}
+.collapsemenu{
+    background-color: rgba(250, 250, 250, 0.8);
+    padding: 20px;
+    display: none; /*hidden*/
+}
+.collapsemenu>div{
+    padding: 20px 0px;
+}
+.collapsemenu>div a{
+    color: var(--primarycolor);
+    text-decoration: none;
+}
+.collapsemenu>div:hover{
+    font-weight: bolder;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.collapsemenu>div:hover a{
+    color: rgb(50,50,50);
+}
+.closeToOpen{
+    display: block;
+}
+.menubtn{
+    font-size: 1.5em;
+}
+@media screen and (max-width:900px) {
+    .header-container{
+        display: none;
+    }
+    .navMenu{display: flex;}
+}
+/*---- MODAL WINDOW ---- */
+.modalwindow{
+    background-color: rgba(30, 30, 30, 0.8);
+    position: fixed;
+    top:0%;
+    bottom: 0%;
+    left:0%;
+    right: 0%;
+    display: none;
+}
+.modalcontent{
+    width: 70%;
+    margin: 10% auto;
+    background-color: white;
+    display: flex;
+}
+.modalcontentimg{
+    width: 50%;
+}
+.modalcontentinfo{
+    padding: 20px;
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.15em;
+    padding: 1em;
+}
+.closemodal{
+    padding-left: 90%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.closemodal:hover{
+    color: var(--primarycolor);
+    font-weight: bolder;
+}
+.cardcontenttitle{
+    color: var(--primarycolor);
+}
