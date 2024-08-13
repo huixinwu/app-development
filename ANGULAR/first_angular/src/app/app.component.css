@@ -1,0 +1,6 @@
+*{box-sizing:border-box ;}
+.title{text-align: center; color: brown;}
+.subtitle{
+    background-color: aqua;
+    padding: 20px;
+}
