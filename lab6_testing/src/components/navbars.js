@@ -6,7 +6,7 @@ const Navbars = function(){
         <>
             <nav className='navbar'>
                 <div>
-                    <Link>QCC</Link>
+                    <a href="https://www.qcc.cuny.edu"  target="_blank" rel="noopener noreferrer">QCC</a>
                 </div>
                 <div className='btngroup'>
                     <button><Link to="/">Home</Link> </button>
@@ -19,3 +19,4 @@ const Navbars = function(){
 }
 
 export default Navbars;
+
